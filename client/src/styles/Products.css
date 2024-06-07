@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+}
+.BigDiv{
+    background-color:#ecf0f7;
+    
+}
+
+.Heading{
+    padding-top: 30px;
+    min-height: 100h;
+    min-width: 100h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.Catalogue{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box{
+    margin: 30px;
+}
+
+.review-box{
+    margin-top: 10px;
+}
+
+
+
+/*#e6cef0;*/

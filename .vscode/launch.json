@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Node.js Server",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}/server.js", // 确保这里的路径指向你的入口文件
+            "env": {
+                "NODE_ENV": "development" // 根据需要设置环境变量
+            }
+        },
+        
+        {
+            "name": "Launch Chrome against localhost",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000", // 替换为你的应用 URL
+            "webRoot": "${workspaceFolder}/src", // 根据你的项目结构进行调整
+            "sourceMapPathOverrides": {
+                "webpack:///src/*": "${webRoot}/*"
+            }
+        }
+    ]
+}
